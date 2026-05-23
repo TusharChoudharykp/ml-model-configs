@@ -1,0 +1,16 @@
+metadata:
+  name: customer-churn-predictor
+  labels:
+    team: ml-predictor
+    owner: tushar@company.com
+  annotations:
+    notes: Customer churn prediction model for telecom users
+spec:
+  serving:
+    variants:
+      - name: v1
+        endpoint: http://customer-churn-predictor-v1.ml.svc.cluster.local:8080
+        weight: 100
+  timeout: 5s
+  rate_limit:
+    rps: 100
