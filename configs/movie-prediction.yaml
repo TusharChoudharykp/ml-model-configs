@@ -1,0 +1,16 @@
+metadata:
+  name: movie-prediction
+  labels:
+    team: tester
+    owner: tester@gmail.com
+  annotations:
+    notes: testing
+spec:
+  serving:
+    variants:
+      - name: v1
+        endpoint: http://movie-prediction-v1.ml.svc.cluster.local:8080
+        weight: 100
+  timeout: 5s
+  rate_limit:
+    rps: 100
