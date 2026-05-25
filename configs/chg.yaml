@@ -1,0 +1,16 @@
+metadata:
+  name: chg
+  labels:
+    team: g
+    owner: vats.amankumarjha2002@gmail.com
+  annotations:
+    notes: gh
+spec:
+  serving:
+    variants:
+      - name: v1
+        endpoint: http://chg-v1.ml.svc.cluster.local:8080
+        weight: 100
+  timeout: 5s
+  rate_limit:
+    rps: 100
