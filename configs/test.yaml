@@ -1,10 +1,10 @@
 metadata:
   name: test
   labels:
-    team: test
+    team: testing
     owner: vats.amankumarjha2002@gmail.com
   annotations:
-    notes: testing
+    notes: test
 spec:
   serving:
     variants:
