@@ -1,0 +1,16 @@
+metadata:
+  name: customer-churn-predictor5
+  labels:
+    team: testing team5
+    owner: test3@gmail.com
+  annotations:
+    notes: testing 4
+spec:
+  serving:
+    variants:
+      - name: v1
+        endpoint: http://customer-churn-predictor5-v1.ml.svc.cluster.local:8080
+        weight: 100
+  timeout: 5s
+  rate_limit:
+    rps: 100
