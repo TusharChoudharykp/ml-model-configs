@@ -1,8 +1,8 @@
 metadata:
   name: customer-churn-predictor6
   labels:
-    team: testing team
-    owner: test1@gmail.com
+    team: Testing Team
+    owner: tester1@gmail.com
   annotations:
     notes: Testing env
 spec:
