@@ -1,10 +1,10 @@
 metadata:
   name: customer-churn-predictor2
   labels:
-    team: ai-analytics-team2
-    owner: anc@gmail.com
+    team: testing team2
+    owner: test2@gmail.com
   annotations:
-    notes: fixing
+    notes: Testing env
 spec:
   serving:
     variants:
