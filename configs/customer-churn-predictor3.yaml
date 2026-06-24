@@ -1,15 +1,15 @@
 metadata:
-  name: customer-churn-predictor2
+  name: customer-churn-predictor3
   labels:
     team: testing team2
-    owner: test2@gmail.com
+    owner: team@gmail.com
   annotations:
-    notes: Testing env
+    notes: Testing env v1
 spec:
   serving:
     variants:
       - name: v1
-        endpoint: http://customer-churn-predictor2-v1.ml.svc.cluster.local:8080
+        endpoint: http://customer-churn-predictor3-v1.ml.svc.cluster.local:8080
         weight: 100
   timeout: 5s
   rate_limit:
