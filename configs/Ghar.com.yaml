@@ -1,0 +1,16 @@
+metadata:
+  name: Ghar.com
+  labels:
+    team: Team Ghar
+    owner: ghar@gmail.com
+  annotations:
+    notes: FOR TESTING PURPOSE
+spec:
+  serving:
+    variants:
+      - name: v1
+        endpoint: http://Ghar.com-v1.ml.svc.cluster.local:8080
+        weight: 100
+  timeout: 5s
+  rate_limit:
+    rps: 100
